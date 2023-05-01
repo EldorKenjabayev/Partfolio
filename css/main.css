@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+
+}
+
+.conteiner{
+    width: 100%;
+    position: relative;
+    background-color: rgb(255, 176, 97);
+}
+.conteiner .content .main_content .img_div{
+    position: relative;
+}
+
+.conteiner .content .main_content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  align-items: center;
+  padding-top: 5%;
+}
+.conteiner .content .main_content .img_div{
+    perspective: 1000px;
+}
+.conteiner .content .main_content .img_div :nth-child(1){
+ position: absolute;
+ animation: SEt 10s ease-in-out infinite;
+}
+.conteiner .content .main_content .img_div img{
+    border-radius: 50%;
+    width: 350px;
+    border: 1px solid #000;
+}
+.conteiner .content .main_content .div_text h1{
+    font-family: 'Castoro Titling', cursive;
+    font-size: 75px;
+}
+
+.conteiner .content .main_content .div_text p{
+    font-family: 'Castoro Titling', cursive;
+    font-size: 45px;
+}
+
+.conteiner .content .mesto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 5%;
+    
+}
+.conteiner .content .mesto .div_omenya{
+    border: 1px solid transparent;
+    width: 35%; 
+    border-radius: 15px;
+    padding: 2%;
+    background-color: aliceblue;
+
+}
+.conteiner .content .mesto .div_omenya h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+.conteiner .content .mesto .div_omenya p{
+    line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+}
+
+.conteiner .content .mesto .div_rojdeniya{
+    width: 45%;
+    padding: 2%;
+}
+.conteiner .content .mesto .div_rojdeniya ul li{
+    line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+
+.conteiner .content .div_content{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+.conteiner .content .div_content .o_obrazovaniy{
+    width: 35%;
+    padding: 2%;
+}
+
+.conteiner .content .div_content .o_obrazovaniy h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.conteiner .content .div_content .o_obrazovaniy p{
+    line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+
+.conteiner .content .div_content .naviki{
+    width: 45%;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: aliceblue;
+    padding: 2%;
+}
+.conteiner .content .div_content .naviki h2{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.conteiner .content .div_content .naviki p{
+    line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+}
+
+@keyframes SEt {
+    1%{
+        transform:scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
